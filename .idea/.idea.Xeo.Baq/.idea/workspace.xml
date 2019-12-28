@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a78de1c2-04e8-4964-8580-b3b59304eb60" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Xeo.Baq" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="C:\Program Files\Git\bin\git.exe" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/2d/2a74b3f7/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2FAD6ED0-0478-4647-B955-5CB639266F73/9/RegistrationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/5d/037b554c/FileAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/DummyFileCopier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/ParallelFileSystemManipulator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/IFileSystemActionParameter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Configuration/BackupSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/GenericDestinationParameter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Filtering/BackupEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Extensions/LinqExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57590294-74AB-400C-8AE3-EEC26A6094FB/5/CrontabSchedule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Configuration/DependencyInjection/MainModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Backups/IBackupPerformer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Filtering/FileSystemFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Backups/FullBackupPerformer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/ManagedFileCopier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Filtering/FileSystemEntryType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Configuration/ApplicationSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/BackupManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/BackupOperationResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2ECD3F11-D027-42CB-A32F-58723999A994/92/2d02b2dc/Lazy`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2FAD6ED0-0478-4647-B955-5CB639266F73/9F/RegistrationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2FAD6ED0-0478-4647-B955-5CB639266F73/3/Module.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2FAD6ED0-0478-4647-B955-5CB639266F73/1/ContainerBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Filtering/BackupEntriesProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2FAD6ED0-0478-4647-B955-5CB639266F73/B/ResolutionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2FAD6ED0-0478-4647-B955-5CB639266F73/6B/ResolveOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/05/0192e6b5/FlagsAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/IBackupOperationResultProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/IFileCopier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/DummyBackupOperationResultProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/658271AA-00D0-42A5-A887-5350393FEE96/10/98db1a20/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/OverlappedFileCopier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Configuration/DependencyInjection/Container.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Xeo.Baq/SystemFileEntry.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/FileType.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/FileSystemEntryType.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/SystemFileFilter.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/FileCopier.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IFileCopier.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/IFileCopier.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/OverlappedFileCopier.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/ManagedFileCopier.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/ParallelActionParameters.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/IParallelActionParameters.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/ParallelCopyParameters.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/GenericSourceDestinationParameters.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/FileSystemFilter.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/ApplicationSettings.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/BackupEntry.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IBackupPerformer.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/BackupSettings.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/BackupOperationResult.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/FullBackupPerformer.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/BackupEntriesProvider.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Configuration.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/IFileSystemActionParameters.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/GenericDestinationParameters.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Backups/IBackupPerformer.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Filtering/BackupEntriesProvider.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/DummyFileCopier.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Extensions/LinqExtensions.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/BackupOperationResultProvider.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/DummyBackupOperationResultProvider.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Filtering/FileSystemEntryType.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/GenericDestinationParameter.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Filtering/BackupEntry.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/ParallelFileSystemManipulator.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Configuration/BackupSettings.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Configuration/ApplicationSettings.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Program.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/BackupManager.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Configuration/DependencyInjection/Container.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Configuration/DependencyInjection/MainModule.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Backups/FullBackupPerformer.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VJAOBXCsWPZNa0vZrF5NfUe0bI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Xeo.Baq" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Xeo.Baq/Xeo.Baq.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a78de1c2-04e8-4964-8580-b3b59304eb60" name="Default Changelist" comment="" />
+      <created>1576960790353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576960790353</updated>
+      <workItem from="1576960793837" duration="4652000" />
+      <workItem from="1577220330841" duration="5130000" />
+      <workItem from="1577276477503" duration="11695000" />
+      <workItem from="1577482467304" duration="2162000" />
+      <workItem from="1577537174458" duration="1046000" />
+      <workItem from="1577551593942" duration="64000" />
+      <workItem from="1577566366236" duration="8642000" />
+      <workItem from="1577575048428" duration="464000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="904" y="380" key="#Deployment" timestamp="1577575552703">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="904" y="380" key="#Deployment/62.0.2498.1440@62.0.2498.1440" timestamp="1577575552703" />
+    <state x="1067" y="424" key="#xdebugger.evaluate" timestamp="1577574420749">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1067" y="424" key="#xdebugger.evaluate/62.0.2498.1440@62.0.2498.1440" timestamp="1577574420749" />
+    <state x="1070" y="583" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1577572859558">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1070" y="583" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/62.0.2498.1440@62.0.2498.1440" timestamp="1577572859558" />
+    <state width="445" height="466" key="DebuggerActiveHint" timestamp="1577574443143">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="445" height="466" key="DebuggerActiveHint/62.0.2498.1440@62.0.2498.1440" timestamp="1577574443143" />
+    <state width="1227" height="414" key="GridCell.Tab.0.bottom" timestamp="1577575640047">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.0.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1227" height="414" key="GridCell.Tab.0.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577575640047" />
+    <state width="1227" height="414" key="GridCell.Tab.0.center" timestamp="1577575640047">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.0.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1227" height="414" key="GridCell.Tab.0.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577575640047" />
+    <state width="1227" height="414" key="GridCell.Tab.0.left" timestamp="1577575640047">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.0.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1227" height="414" key="GridCell.Tab.0.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577575640047" />
+    <state width="1227" height="414" key="GridCell.Tab.0.right" timestamp="1577575640047">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.0.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1227" height="414" key="GridCell.Tab.0.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577575640047" />
+    <state width="1064" height="508" key="GridCell.Tab.1.bottom" timestamp="1577574271167">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.1.bottom.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.1.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.1.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577574271167" />
+    <state width="1064" height="508" key="GridCell.Tab.1.center" timestamp="1577574271167">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.1.center.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.1.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.1.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577574271167" />
+    <state width="1064" height="508" key="GridCell.Tab.1.left" timestamp="1577574271167">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.1.left.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.1.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.1.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577574271167" />
+    <state width="1064" height="508" key="GridCell.Tab.1.right" timestamp="1577574271167">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.1.right.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.1.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.1.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577574271167" />
+    <state width="1064" height="508" key="GridCell.Tab.2.bottom" timestamp="1577574270062">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.2.bottom.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.2.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.2.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270062" />
+    <state width="1064" height="508" key="GridCell.Tab.2.center" timestamp="1577574270062">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.2.center.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.2.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.2.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270062" />
+    <state width="1064" height="508" key="GridCell.Tab.2.left" timestamp="1577574270062">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.2.left.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.2.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.2.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270062" />
+    <state width="1064" height="508" key="GridCell.Tab.2.right" timestamp="1577574270062">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.2.right.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.2.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.2.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270062" />
+    <state width="1064" height="508" key="GridCell.Tab.3.bottom" timestamp="1577574270063">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.3.bottom.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.3.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.3.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270063" />
+    <state width="1064" height="508" key="GridCell.Tab.3.center" timestamp="1577574270063">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.3.center.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.3.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.3.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270063" />
+    <state width="1064" height="508" key="GridCell.Tab.3.left" timestamp="1577574270062">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.3.left.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.3.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.3.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270062" />
+    <state width="1064" height="508" key="GridCell.Tab.3.right" timestamp="1577574270063">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.3.right.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.3.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.3.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270063" />
+    <state width="1064" height="508" key="GridCell.Tab.4.bottom" timestamp="1577574270063">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.4.bottom.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.4.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.4.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270063" />
+    <state width="1064" height="508" key="GridCell.Tab.4.center" timestamp="1577574270063">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.4.center.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.4.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.4.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270063" />
+    <state width="1064" height="508" key="GridCell.Tab.4.left" timestamp="1577574270063">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.4.left.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.4.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.4.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270063" />
+    <state width="1064" height="508" key="GridCell.Tab.4.right" timestamp="1577574270063">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.4.right.inPresentationMode" timestamp="1577574742895">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="1227" height="508" key="GridCell.Tab.4.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
+    <state width="1064" height="508" key="GridCell.Tab.4.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577574270063" />
+    <state x="942" y="574" key="Performance.Activity.Monitor" timestamp="1577575155306">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="942" y="574" key="Performance.Activity.Monitor/62.0.2498.1440@62.0.2498.1440" timestamp="1577575155306" />
+    <state x="904" y="453" key="Rider.ProjectTemplateDialog.Size" timestamp="1576961118204">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="904" y="453" key="Rider.ProjectTemplateDialog.Size/62.0.2498.1440@62.0.2498.1440" timestamp="1576961118204" />
+    <state x="1145" y="422" key="RiderGenerateDialog" timestamp="1577569379868">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1145" y="422" key="RiderGenerateDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1577569379868" />
+    <state x="498" y="355" width="996" height="722" key="SettingsEditor" timestamp="1577575248276">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="498" y="355" width="996" height="722" key="SettingsEditor/62.0.2498.1440@62.0.2498.1440" timestamp="1577575248276" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1577569214081">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/62.0.2498.1440@62.0.2498.1440" timestamp="1577569214081" />
+    <state x="1142" y="591" key="VCS.EditChangelistDialog" timestamp="1577575572832">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1142" y="591" key="VCS.EditChangelistDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1577575572831" />
+    <state x="1069" y="336" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577484074397">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1069" y="336" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/62.0.2498.1440@62.0.2498.1440" timestamp="1577484074397" />
+    <state x="801" y="457" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1577573231064">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="801" y="457" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/62.0.2498.1440@62.0.2498.1440" timestamp="1577573231064" />
+    <state x="684" y="563" width="705" height="305" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1577567021079">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="684" y="563" width="705" height="305" key="org.intellij.images.editor.actions.BackgroundImageDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1577567021079" />
+    <state x="968" y="341" key="run.anything.popup" timestamp="1577225145450">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="968" y="341" key="run.anything.popup/62.0.2498.1440@62.0.2498.1440" timestamp="1577225145450" />
+    <state x="974" y="321" width="672" height="682" key="search.everywhere.popup" timestamp="1577569849289">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="974" y="321" width="672" height="682" key="search.everywhere.popup/62.0.2498.1440@62.0.2498.1440" timestamp="1577569849289" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Xeo.Baq/Backups/FullBackupPerformer.cs</url>
+          <line>46</line>
+          <properties documentPath="$PROJECT_DIR$/Xeo.Baq/Backups/FullBackupPerformer.cs" initialLine="46">
+            <startOffsets>
+              <option value="1899" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2008" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Xeo.Baq/Backups/FullBackupPerformer.cs</url>
+          <line>72</line>
+          <properties documentPath="$PROJECT_DIR$/Xeo.Baq/Backups/FullBackupPerformer.cs" initialLine="72">
+            <startOffsets>
+              <option value="3142" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3221" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Xeo.Baq/Backups/FullBackupPerformer.cs</url>
+          <line>61</line>
+          <properties documentPath="$PROJECT_DIR$/Xeo.Baq/Backups/FullBackupPerformer.cs" initialLine="61">
+            <startOffsets>
+              <option value="2771" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2825" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="DotNet Exception Breakpoints" />
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Serialization.CodeGeneratorConversionException" isInternal="false" displayValue="CodeGeneratorConversionException" namespaceName="System.Xml.Serialization">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Schema.UpaException" isInternal="false" displayValue="UpaException" namespaceName="System.Xml.Schema">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Configuration.SettingsPropertyNotFoundException" isInternal="false" displayValue="SettingsPropertyNotFoundException" namespaceName="System.Configuration">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Configuration.SettingsPropertyIsReadOnlyException" isInternal="false" displayValue="SettingsPropertyIsReadOnlyException" namespaceName="System.Configuration">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Configuration.SettingsPropertyWrongTypeException" isInternal="false" displayValue="SettingsPropertyWrongTypeException" namespaceName="System.Configuration">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.BarrierPostPhaseException" isInternal="false" displayValue="BarrierPostPhaseException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="AdalException" isInternal="false" displayValue="AdalException">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.SqlClient.EnclaveDelegate.RetriableEnclaveQueryExecutionException" isInternal="false" displayValue="EnclaveDelegate+RetriableEnclaveQueryExecutionException" namespaceName="System.Data.SqlClient">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="&lt;CrtImplementationDetails&gt;.ModuleLoadException" isInternal="false" displayValue="ModuleLoadException" namespaceName="&lt;CrtImplementationDetails&gt;">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.Mail.SmtpException" isInternal="false" displayValue="SmtpException" namespaceName="System.Net.Mail">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Management.Instrumentation.InstrumentationBaseException" isInternal="false" displayValue="InstrumentationBaseException" namespaceName="System.Management.Instrumentation">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Diagnostics.Eventing.Reader.EventLogException" isInternal="false" displayValue="EventLogException" namespaceName="System.Diagnostics.Eventing.Reader">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.Composition.CompositionContractMismatchException" isInternal="false" displayValue="CompositionContractMismatchException" namespaceName="System.ComponentModel.Composition">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.Http.HttpRequestException" isInternal="false" displayValue="HttpRequestException" namespaceName="System.Net.Http">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.Composition.ImportCardinalityMismatchException" isInternal="false" displayValue="ImportCardinalityMismatchException" namespaceName="System.ComponentModel.Composition">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.Composition.CompositionException" isInternal="false" displayValue="CompositionException" namespaceName="System.ComponentModel.Composition">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="WinApi.Windows.WindowException" isInternal="false" displayValue="WindowException" namespaceName="WinApi.Windows">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.Composition.Primitives.ComposablePartException" isInternal="false" displayValue="ComposablePartException" namespaceName="System.ComponentModel.Composition.Primitives">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.AggregateException" isInternal="false" displayValue="AggregateException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.SystemException" isInternal="false" displayValue="SystemException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ApplicationException" isInternal="false" displayValue="ApplicationException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.InvalidTimeZoneException" isInternal="false" displayValue="InvalidTimeZoneException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.TimeZoneNotFoundException" isInternal="false" displayValue="TimeZoneNotFoundException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.IsolatedStorage.IsolatedStorageException" isInternal="false" displayValue="IsolatedStorageException" namespaceName="System.IO.IsolatedStorage">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Diagnostics.Contracts.ContractException" isInternal="false" displayValue="ContractException" namespaceName="System.Diagnostics.Contracts">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Diagnostics.Tracing.EventSourceException" isInternal="false" displayValue="EventSourceException" namespaceName="System.Diagnostics.Tracing">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.LockRecursionException" isInternal="false" displayValue="LockRecursionException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskSchedulerException" isInternal="false" displayValue="TaskSchedulerException" namespaceName="System.Threading.Tasks">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Reflection.MetadataException" isInternal="false" displayValue="MetadataException" namespaceName="System.Reflection">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.CompilerServices.RuntimeWrappedException" isInternal="false" displayValue="RuntimeWrappedException" namespaceName="System.Runtime.CompilerServices">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Configuration.Provider.ProviderException" isInternal="false" displayValue="ProviderException" namespaceName="System.Configuration.Provider">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="NCrontab.CrontabException" isInternal="false" displayValue="CrontabException" namespaceName="NCrontab">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="Microsoft.Contracts.Contract.PostconditionException" isInternal="false" displayValue="Contract+PostconditionException" namespaceName="Microsoft.Contracts">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="Microsoft.Contracts.Contract.PreconditionException" isInternal="false" displayValue="Contract+PreconditionException" namespaceName="Microsoft.Contracts">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="Microsoft.Contracts.Contract.InvariantException" isInternal="false" displayValue="Contract+InvariantException" namespaceName="Microsoft.Contracts">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="Microsoft.Contracts.Contract.AssertionException" isInternal="false" displayValue="Contract+AssertionException" namespaceName="Microsoft.Contracts">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Linq.SystemCore_EnumerableDebugViewEmptyException" isInternal="false" displayValue="SystemCore_EnumerableDebugViewEmptyException" namespaceName="System.Linq">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="Microsoft.Contracts.Contract.AssumptionException" isInternal="false" displayValue="Contract+AssumptionException" namespaceName="Microsoft.Contracts">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ASSERT" isInternal="false" displayValue="ASSERT" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="Autofac.Core.Activators.Reflection.NoConstructorsFoundException" isInternal="false" displayValue="NoConstructorsFoundException" namespaceName="Autofac.Core.Activators.Reflection">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="Autofac.Core.DependencyResolutionException" isInternal="false" displayValue="DependencyResolutionException" namespaceName="Autofac.Core">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.Mail.SmtpFailedRecipientException" isInternal="false" displayValue="SmtpFailedRecipientException" namespaceName="System.Net.Mail">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="&lt;CrtImplementationDetails&gt;.ModuleLoadExceptionHandlerException" isInternal="false" displayValue="ModuleLoadExceptionHandlerException" namespaceName="&lt;CrtImplementationDetails&gt;">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Management.Instrumentation.InstrumentationException" isInternal="false" displayValue="InstrumentationException" namespaceName="System.Management.Instrumentation">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Diagnostics.Eventing.Reader.EventLogNotFoundException" isInternal="false" displayValue="EventLogNotFoundException" namespaceName="System.Diagnostics.Eventing.Reader">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Diagnostics.Eventing.Reader.EventLogReadingException" isInternal="false" displayValue="EventLogReadingException" namespaceName="System.Diagnostics.Eventing.Reader">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException" isInternal="false" displayValue="EventLogProviderDisabledException" namespaceName="System.Diagnostics.Eventing.Reader">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Diagnostics.Eventing.Reader.EventLogInvalidDataException" isInternal="false" displayValue="EventLogInvalidDataException" namespaceName="System.Diagnostics.Eventing.Reader">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.Composition.ChangeRejectedException" isInternal="false" displayValue="ChangeRejectedException" namespaceName="System.ComponentModel.Composition">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.WaitHandleCannotBeOpenedException" isInternal="false" displayValue="WaitHandleCannotBeOpenedException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Reflection.InvalidFilterCriteriaException" isInternal="false" displayValue="InvalidFilterCriteriaException" namespaceName="System.Reflection">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Reflection.TargetException" isInternal="false" displayValue="TargetException" namespaceName="System.Reflection">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Reflection.TargetInvocationException" isInternal="false" displayValue="TargetInvocationException" namespaceName="System.Reflection">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Reflection.TargetParameterCountException" isInternal="false" displayValue="TargetParameterCountException" namespaceName="System.Reflection">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.NativeOrStaticEventRegistrationImpl.ReaderWriterLockTimedOutException" isInternal="false" displayValue="WindowsRuntimeMarshal+NativeOrStaticEventRegistrationImpl+ReaderWriterLockTimedOutException" namespaceName="System.Runtime.InteropServices.WindowsRuntime">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.XmlException" isInternal="false" displayValue="XmlException" namespaceName="System.Xml">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Schema.XmlSchemaException" isInternal="false" displayValue="XmlSchemaException" namespaceName="System.Xml.Schema">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Xsl.XsltException" isInternal="false" displayValue="XsltException" namespaceName="System.Xml.Xsl">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.XPath.XPathException" isInternal="false" displayValue="XPathException" namespaceName="System.Xml.XPath">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.InvalidDataException" isInternal="false" displayValue="InvalidDataException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.InternalException" isInternal="false" displayValue="InternalException" namespaceName="System.Net">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.InternalBufferOverflowException" isInternal="false" displayValue="InternalBufferOverflowException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Configuration.ConfigurationException" isInternal="false" displayValue="ConfigurationException" namespaceName="System.Configuration">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.LicenseException" isInternal="false" displayValue="LicenseException" namespaceName="System.ComponentModel">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.WarningException" isInternal="false" displayValue="WarningException" namespaceName="System.ComponentModel">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="Microsoft.SqlServer.Server.InvalidUdtException" isInternal="false" displayValue="InvalidUdtException" namespaceName="Microsoft.SqlServer.Server">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.DataException" isInternal="false" displayValue="DataException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.DBConcurrencyException" isInternal="false" displayValue="DBConcurrencyException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.OperationAbortedException" isInternal="false" displayValue="OperationAbortedException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.SqlTypes.SqlTypeException" isInternal="false" displayValue="SqlTypeException" namespaceName="System.Data.SqlTypes">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.OutOfMemoryException" isInternal="false" displayValue="OutOfMemoryException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.StackOverflowException" isInternal="false" displayValue="StackOverflowException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ExecutionEngineException" isInternal="false" displayValue="ExecutionEngineException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.DataMisalignedException" isInternal="false" displayValue="DataMisalignedException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.MemberAccessException" isInternal="false" displayValue="MemberAccessException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.Authentication.AuthenticationException" isInternal="false" displayValue="AuthenticationException" namespaceName="System.Security.Authentication">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.AppDomainUnloadedException" isInternal="false" displayValue="AppDomainUnloadedException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.AccessViolationException" isInternal="false" displayValue="AccessViolationException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ArgumentException" isInternal="false" displayValue="ArgumentException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ArrayTypeMismatchException" isInternal="false" displayValue="ArrayTypeMismatchException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.BadImageFormatException" isInternal="false" displayValue="BadImageFormatException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ArithmeticException" isInternal="false" displayValue="ArithmeticException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.CannotUnloadAppDomainException" isInternal="false" displayValue="CannotUnloadAppDomainException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.TypeUnloadedException" isInternal="false" displayValue="TypeUnloadedException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ContextMarshalException" isInternal="false" displayValue="ContextMarshalException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.FormatException" isInternal="false" displayValue="FormatException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.InsufficientExecutionStackException" isInternal="false" displayValue="InsufficientExecutionStackException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IndexOutOfRangeException" isInternal="false" displayValue="IndexOutOfRangeException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.InvalidCastException" isInternal="false" displayValue="InvalidCastException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.InvalidOperationException" isInternal="false" displayValue="InvalidOperationException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.InvalidProgramException" isInternal="false" displayValue="InvalidProgramException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.MulticastNotSupportedException" isInternal="false" displayValue="MulticastNotSupportedException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.NotImplementedException" isInternal="false" displayValue="NotImplementedException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.NotSupportedException" isInternal="false" displayValue="NotSupportedException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.NullReferenceException" isInternal="false" displayValue="NullReferenceException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.OperationCanceledException" isInternal="false" displayValue="OperationCanceledException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.RankException" isInternal="false" displayValue="RankException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.TimeoutException" isInternal="false" displayValue="TimeoutException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.TypeInitializationException" isInternal="false" displayValue="TypeInitializationException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.TypeLoadException" isInternal="false" displayValue="TypeLoadException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.IOException" isInternal="false" displayValue="IOException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.XmlSyntaxException" isInternal="false" displayValue="XmlSyntaxException" namespaceName="System.Security">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.UnauthorizedAccessException" isInternal="false" displayValue="UnauthorizedAccessException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.SecurityException" isInternal="false" displayValue="SecurityException" namespaceName="System.Security">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.HostProtectionException" isInternal="false" displayValue="HostProtectionException" namespaceName="System.Security">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.VerificationException" isInternal="false" displayValue="VerificationException" namespaceName="System.Security">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.Cryptography.CryptographicException" isInternal="false" displayValue="CryptographicException" namespaceName="System.Security.Cryptography">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.Principal.IdentityNotMappedException" isInternal="false" displayValue="IdentityNotMappedException" namespaceName="System.Security.Principal">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Resources.MissingManifestResourceException" isInternal="false" displayValue="MissingManifestResourceException" namespaceName="System.Resources">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.Policy.PolicyException" isInternal="false" displayValue="PolicyException" namespaceName="System.Security.Policy">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.AbandonedMutexException" isInternal="false" displayValue="AbandonedMutexException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Resources.MissingSatelliteAssemblyException" isInternal="false" displayValue="MissingSatelliteAssemblyException" namespaceName="System.Resources">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.SemaphoreFullException" isInternal="false" displayValue="SemaphoreFullException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" isInternal="false" displayValue="ThreadAbortException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.SynchronizationLockException" isInternal="false" displayValue="SynchronizationLockException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadInterruptedException" isInternal="false" displayValue="ThreadInterruptedException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadStateException" isInternal="false" displayValue="ThreadStateException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadStartException" isInternal="false" displayValue="ThreadStartException" namespaceName="System.Threading">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Reflection.AmbiguousMatchException" isInternal="false" displayValue="AmbiguousMatchException" namespaceName="System.Reflection">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Reflection.ReflectionTypeLoadException" isInternal="false" displayValue="ReflectionTypeLoadException" namespaceName="System.Reflection">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.Serialization.SerializationException" isInternal="false" displayValue="SerializationException" namespaceName="System.Runtime.Serialization">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.Remoting.RemotingException" isInternal="false" displayValue="RemotingException" namespaceName="System.Runtime.Remoting">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.Remoting.ServerException" isInternal="false" displayValue="ServerException" namespaceName="System.Runtime.Remoting">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.InteropServices.ExternalException" isInternal="false" displayValue="ExternalException" namespaceName="System.Runtime.InteropServices">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.InteropServices.InvalidOleVariantTypeException" isInternal="false" displayValue="InvalidOleVariantTypeException" namespaceName="System.Runtime.InteropServices">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.InteropServices.MarshalDirectiveException" isInternal="false" displayValue="MarshalDirectiveException" namespaceName="System.Runtime.InteropServices">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Collections.Generic.KeyNotFoundException" isInternal="false" displayValue="KeyNotFoundException" namespaceName="System.Collections.Generic">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.InteropServices.InvalidComObjectException" isInternal="false" displayValue="InvalidComObjectException" namespaceName="System.Runtime.InteropServices">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.InteropServices.SafeArrayRankMismatchException" isInternal="false" displayValue="SafeArrayRankMismatchException" namespaceName="System.Runtime.InteropServices">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.InteropServices.SafeArrayTypeMismatchException" isInternal="false" displayValue="SafeArrayTypeMismatchException" namespaceName="System.Runtime.InteropServices">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="Autofac.Core.Registration.ComponentNotRegisteredException" isInternal="false" displayValue="ComponentNotRegisteredException" namespaceName="Autofac.Core.Registration">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.Mail.SmtpFailedRecipientsException" isInternal="false" displayValue="SmtpFailedRecipientsException" namespaceName="System.Net.Mail">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Management.Instrumentation.InstanceNotFoundException" isInternal="false" displayValue="InstanceNotFoundException" namespaceName="System.Management.Instrumentation">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Schema.XmlSchemaValidationException" isInternal="false" displayValue="XmlSchemaValidationException" namespaceName="System.Xml.Schema">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Schema.XmlSchemaInferenceException" isInternal="false" displayValue="XmlSchemaInferenceException" namespaceName="System.Xml.Schema">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Xsl.XsltCompileException" isInternal="false" displayValue="XsltCompileException" namespaceName="System.Xml.Xsl">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Configuration.ConfigurationErrorsException" isInternal="false" displayValue="ConfigurationErrorsException" namespaceName="System.Configuration">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException" isInternal="false" displayValue="CryptoSignedXmlRecursionException" namespaceName="System.Security.Cryptography.Xml">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.StrongTypingException" isInternal="false" displayValue="StrongTypingException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.TypedDataSetGeneratorException" isInternal="false" displayValue="TypedDataSetGeneratorException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.ConstraintException" isInternal="false" displayValue="ConstraintException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.DeletedRowInaccessibleException" isInternal="false" displayValue="DeletedRowInaccessibleException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.DuplicateNameException" isInternal="false" displayValue="DuplicateNameException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.InRowChangingEventException" isInternal="false" displayValue="InRowChangingEventException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.InvalidConstraintException" isInternal="false" displayValue="InvalidConstraintException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.MissingPrimaryKeyException" isInternal="false" displayValue="MissingPrimaryKeyException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.NoNullAllowedException" isInternal="false" displayValue="NoNullAllowedException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.ReadOnlyException" isInternal="false" displayValue="ReadOnlyException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.RowNotInTableException" isInternal="false" displayValue="RowNotInTableException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.VersionNotFoundException" isInternal="false" displayValue="VersionNotFoundException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.InvalidExpressionException" isInternal="false" displayValue="InvalidExpressionException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.SqlTypes.SqlNullValueException" isInternal="false" displayValue="SqlNullValueException" namespaceName="System.Data.SqlTypes">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.SqlTypes.SqlTruncateException" isInternal="false" displayValue="SqlTruncateException" namespaceName="System.Data.SqlTypes">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.SqlTypes.SqlNotFilledException" isInternal="false" displayValue="SqlNotFilledException" namespaceName="System.Data.SqlTypes">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.SqlTypes.SqlAlreadyFilledException" isInternal="false" displayValue="SqlAlreadyFilledException" namespaceName="System.Data.SqlTypes">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Xsl.XslTransformException" isInternal="false" displayValue="XslTransformException" namespaceName="System.Xml.Xsl">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.InsufficientMemoryException" isInternal="false" displayValue="InsufficientMemoryException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.FieldAccessException" isInternal="false" displayValue="FieldAccessException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.MethodAccessException" isInternal="false" displayValue="MethodAccessException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.MissingMemberException" isInternal="false" displayValue="MissingMemberException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.Authentication.InvalidCredentialException" isInternal="false" displayValue="InvalidCredentialException" namespaceName="System.Security.Authentication">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.InvalidAsynchronousStateException" isInternal="false" displayValue="InvalidAsynchronousStateException" namespaceName="System.ComponentModel">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.InvalidEnumArgumentException" isInternal="false" displayValue="InvalidEnumArgumentException" namespaceName="System.ComponentModel">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ArgumentNullException" isInternal="false" displayValue="ArgumentNullException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ArgumentOutOfRangeException" isInternal="false" displayValue="ArgumentOutOfRangeException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.DuplicateWaitObjectException" isInternal="false" displayValue="DuplicateWaitObjectException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Globalization.CultureNotFoundException" isInternal="false" displayValue="CultureNotFoundException" namespaceName="System.Globalization">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Text.DecoderFallbackException" isInternal="false" displayValue="DecoderFallbackException" namespaceName="System.Text">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Text.EncoderFallbackException" isInternal="false" displayValue="EncoderFallbackException" namespaceName="System.Text">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.DivideByZeroException" isInternal="false" displayValue="DivideByZeroException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.NotFiniteNumberException" isInternal="false" displayValue="NotFiniteNumberException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.OverflowException" isInternal="false" displayValue="OverflowException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.UriFormatException" isInternal="false" displayValue="UriFormatException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.CookieException" isInternal="false" displayValue="CookieException" namespaceName="System.Net">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Reflection.CustomAttributeFormatException" isInternal="false" displayValue="CustomAttributeFormatException" namespaceName="System.Reflection">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.ProtocolViolationException" isInternal="false" displayValue="ProtocolViolationException" namespaceName="System.Net">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.WebException" isInternal="false" displayValue="WebException" namespaceName="System.Net">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ObjectDisposedException" isInternal="false" displayValue="ObjectDisposedException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.NetworkInformation.PingException" isInternal="false" displayValue="PingException" namespaceName="System.Net.NetworkInformation">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.PlatformNotSupportedException" isInternal="false" displayValue="PlatformNotSupportedException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" isInternal="false" displayValue="TaskCanceledException" namespaceName="System.Threading.Tasks">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Text.RegularExpressions.RegexMatchTimeoutException" isInternal="false" displayValue="RegexMatchTimeoutException" namespaceName="System.Text.RegularExpressions">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.EntryPointNotFoundException" isInternal="false" displayValue="EntryPointNotFoundException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.DllNotFoundException" isInternal="false" displayValue="DllNotFoundException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.TypeAccessException" isInternal="false" displayValue="TypeAccessException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.AccessControl.PrivilegeNotHeldException" isInternal="false" displayValue="PrivilegeNotHeldException" namespaceName="System.Security.AccessControl">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.Compression.ZLibException" isInternal="false" displayValue="ZLibException" namespaceName="System.IO.Compression">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.DriveNotFoundException" isInternal="false" displayValue="DriveNotFoundException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.DirectoryNotFoundException" isInternal="false" displayValue="DirectoryNotFoundException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.FileLoadException" isInternal="false" displayValue="FileLoadException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.FileNotFoundException" isInternal="false" displayValue="FileNotFoundException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.PathTooLongException" isInternal="false" displayValue="PathTooLongException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.EndOfStreamException" isInternal="false" displayValue="EndOfStreamException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Security.Cryptography.CryptographicUnexpectedOperationException" isInternal="false" displayValue="CryptographicUnexpectedOperationException" namespaceName="System.Security.Cryptography">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.Remoting.RemotingTimeoutException" isInternal="false" displayValue="RemotingTimeoutException" namespaceName="System.Runtime.Remoting">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.Win32Exception" isInternal="false" displayValue="Win32Exception" namespaceName="System.ComponentModel">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.ComponentModel.Design.CheckoutException" isInternal="false" displayValue="CheckoutException" namespaceName="System.ComponentModel.Design">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.Common.DbException" isInternal="false" displayValue="DbException" namespaceName="System.Data.Common">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.InteropServices.COMException" isInternal="false" displayValue="COMException" namespaceName="System.Runtime.InteropServices">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Runtime.InteropServices.SEHException" isInternal="false" displayValue="SEHException" namespaceName="System.Runtime.InteropServices">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.SyntaxErrorException" isInternal="false" displayValue="SyntaxErrorException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.EvaluateException" isInternal="false" displayValue="EvaluateException" namespaceName="System.Data">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Xsl.XslLoadException" isInternal="false" displayValue="XslLoadException" namespaceName="System.Xml.Xsl">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.MissingFieldException" isInternal="false" displayValue="MissingFieldException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.MissingMethodException" isInternal="false" displayValue="MissingMethodException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.HttpListenerException" isInternal="false" displayValue="HttpListenerException" namespaceName="System.Net">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.WebSockets.WebSocketException" isInternal="false" displayValue="WebSocketException" namespaceName="System.Net.WebSockets">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.Sockets.SocketException" isInternal="false" displayValue="SocketException" namespaceName="System.Net.Sockets">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.NetworkInformation.NetworkInformationException" isInternal="false" displayValue="NetworkInformationException" namespaceName="System.Net.NetworkInformation">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.SqlClient.SqlException" isInternal="false" displayValue="SqlException" namespaceName="System.Data.SqlClient">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.OleDb.OleDbException" isInternal="false" displayValue="OleDbException" namespaceName="System.Data.OleDb">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Data.Odbc.OdbcException" isInternal="false" displayValue="OdbcException" namespaceName="System.Data.Odbc">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="DotNet Exception Breakpoints">
+          <properties exception="System.Xml.Xsl.XPath.XPathCompileException" isInternal="false" displayValue="XPathCompileException" namespaceName="System.Xml.Xsl.XPath">
+            <option name="internal" value="false" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
