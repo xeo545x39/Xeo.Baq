@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Xeo.Baq.Configuration;
+using Xeo.Baq.Extensions;
 
 namespace Xeo.Baq.Filtering
 {
@@ -23,35 +24,67 @@ namespace Xeo.Baq.Filtering
         {
             var backupEntries = new Dictionary<BackupEntryKey, BackupEntry>();
 
-            //foreach (IGrouping<string, FileSystemFilter> filterGroup in filters.GroupBy(x => x.Path))
             foreach (FileSystemFilter filter in filters)
             {
                 CheckFilter(filter);
 
                 bool shouldSearchSub = ShouldSearchSub(filter);
-                string searchPattern = filter.Regex != null
-                    ? "*"
-                    : filter.NameMask;
+                string searchPattern = GetSearchPattern(filter);
 
-                IEnumerable<string> files = GetFiles(shouldSearchSub, filter, searchPattern);
+                PrepareFilter(filter);
 
-                if (filter.Regex != null)
-                {
-                    Regex regex = CreateRegex(filter);
+                HandleFile(filter,
+                    shouldSearchSub,
+                    searchPattern,
+                    backupEntries);
 
-                    files = files.Where(file => regex.IsMatch(file))
-                        .ToArray();
-                }
-
-                foreach (string file in files)
-                {
-                    var key = new BackupEntryKey(file);
-                    backupEntries.Add(key, new BackupEntry(key));
-                }
+                HandleDirectory(filter,
+                    shouldSearchSub,
+                    searchPattern,
+                    backupEntries);
             }
 
             return backupEntries;
         }
+
+        private void HandleDirectory(FileSystemFilter filter,
+            bool shouldSearchSub,
+            string searchPattern,
+            Dictionary<BackupEntryKey, BackupEntry> backupEntries)
+        {
+            if (filter.EntryType.HasFlag(FileSystemEntryType.Directory))
+            {
+                IEnumerable<string> directories = GetDirectories(shouldSearchSub, filter, searchPattern);
+
+                foreach (string directory in directories)
+                {
+                    var key = new BackupEntryKey(directory);
+                    backupEntries.Add(key, new BackupEntry(key, FileSystemEntryType.Directory));
+                }
+            }
+        }
+
+        private void HandleFile(FileSystemFilter filter,
+            bool shouldSearchSub,
+            string searchPattern,
+            Dictionary<BackupEntryKey, BackupEntry> backupEntries)
+        {
+            if (filter.EntryType.HasFlag(FileSystemEntryType.File))
+            {
+                IEnumerable<string> files = GetFiles(shouldSearchSub, filter, searchPattern);
+
+                foreach (string file in files)
+                {
+                    var key = new BackupEntryKey(file);
+                    backupEntries.Add(key, new BackupEntry(key, FileSystemEntryType.File));
+                }
+            }
+        }
+
+        private static string GetSearchPattern(FileSystemFilter filter)
+            => filter.Regex != null
+                ? "*"
+                : filter.NameMask;
 
         private static void CheckFilter(FileSystemFilter filter)
         {
@@ -67,10 +100,45 @@ namespace Xeo.Baq.Filtering
             }
         }
 
-        private static string[] GetFiles(bool shouldSearchSub, FileSystemFilter filter, string searchPattern)
-            => shouldSearchSub
+        private string[] GetFiles(bool shouldSearchSub, FileSystemFilter filter, string searchPattern)
+        {
+            string[] files = shouldSearchSub
                 ? Directory.GetFiles(filter.Path, searchPattern, SearchOption.AllDirectories)
                 : Directory.GetFiles(filter.Path, searchPattern, SearchOption.TopDirectoryOnly);
+
+            IEnumerable<string> output = files
+                .Select(f => new FileInfo(f))
+                .Where(f => filter.Attributes.Any(a => f.Attributes.HasFlag(a)))
+                .ConditionalWhere(
+                    f => filter.Regex != null,
+                    () => CreateRegex(filter),
+                    (file, regex) => regex.IsMatch(file.FullName))
+                .Select(f => f.FullName);
+
+            return output.ToArray();
+        }
+
+        private string[] GetDirectories(bool shouldSearchSub, FileSystemFilter filter, string searchPattern)
+        {
+            string[] directories = shouldSearchSub
+                ? Directory.GetDirectories(filter.Path, searchPattern, SearchOption.AllDirectories)
+                : Directory.GetDirectories(filter.Path, searchPattern, SearchOption.TopDirectoryOnly);
+
+            IEnumerable<string> output = directories
+                .Select(d => new DirectoryInfo(d))
+                .Where(d => filter.Attributes.Any(a => d.Attributes.HasFlag(a)))
+                .ConditionalWhere(x => filter.Regex != null,
+                    () => CreateRegex(filter),
+                    (directory, regex) => regex.IsMatch(directory.FullName))
+                .Select(d => d.FullName);
+
+            return output.ToArray();
+        }
+
+        private void PrepareFilter(FileSystemFilter filter)
+        {
+            filter.Path = filter.Path.TrimEnd('*');
+        }
 
         private Regex CreateRegex(FileSystemFilter filter)
             => new Regex(filter.Regex,

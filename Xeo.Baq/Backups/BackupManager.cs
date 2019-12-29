@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Xeo.Baq.Backups;
+using System.IO;
+using NLog;
 using Xeo.Baq.Configuration;
 
-namespace Xeo.Baq
+namespace Xeo.Baq.Backups
 {
     public interface IBackupManager
     {
@@ -15,14 +16,17 @@ namespace Xeo.Baq
     {
         private readonly IEnumerable<BackupSettings> _backupSettingsList;
         private readonly Func<BackupSettings, FullBackupPerformer> _fullBackupPerformerFactory;
+        private readonly ILogger _logger;
 
 
         public BackupManager(IEnumerable<BackupSettings> backupSettingsList,
             IBackupOperationResultProvider backupOperationResultProvider,
-            Func<BackupSettings, FullBackupPerformer> fullBackupPerformerFactory)
+            Func<BackupSettings, FullBackupPerformer> fullBackupPerformerFactory,
+            ILogger logger)
         {
             _backupSettingsList = backupSettingsList;
             _fullBackupPerformerFactory = fullBackupPerformerFactory;
+            _logger = logger;
 
             OperationResultProvider = backupOperationResultProvider;
         }
@@ -37,6 +41,8 @@ namespace Xeo.Baq
 
                 IBackupPerformer backupPerformer = factory(settings);
 
+                _logger.Info($"Performing backup with Id = '{settings.Id}'.");
+                
                 backupPerformer.Perform();
             }
         }

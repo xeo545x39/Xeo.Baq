@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using Xeo.Baq.Configuration;
 using Xeo.Baq.Extensions;
@@ -16,6 +15,7 @@ namespace Xeo.Baq.Backups
         private readonly IBackupOperationResultProvider _backupOperationResultProvider;
         private readonly BackupSettings _backupSettings;
         private readonly IFileCopier _fileCopier;
+        private readonly IFileSystemActionExecutor _fileSystemActionExecutor;
         private readonly IParallelFileSystemManipulator _parallelFileSystemManipulator;
 
         public FullBackupPerformer(BackupSettings backupSettings,
@@ -23,6 +23,7 @@ namespace Xeo.Baq.Backups
             IFileCopier fileCopier,
             IParallelFileSystemManipulator parallelFileSystemManipulator,
             IBackupOperationResultProvider backupOperationResultProvider,
+            IFileSystemActionExecutor fileSystemActionExecutor,
             ApplicationSettings applicationSettings)
         {
             _backupSettings = backupSettings;
@@ -30,6 +31,7 @@ namespace Xeo.Baq.Backups
             _fileCopier = fileCopier;
             _parallelFileSystemManipulator = parallelFileSystemManipulator;
             _backupOperationResultProvider = backupOperationResultProvider;
+            _fileSystemActionExecutor = fileSystemActionExecutor;
             _applicationSettings = applicationSettings;
         }
 
@@ -49,30 +51,11 @@ namespace Xeo.Baq.Backups
                 foreach (IEnumerable<KeyValuePair<BackupEntryKey, BackupEntry>> batchedEntries in backupEntries.Batch(_applicationSettings
                     .ParallelOperationMaxItems))
                 {
-                    IFileSystemActionParameter[] actionParams = batchedEntries.Select(x
-                            => (IFileSystemActionParameter) new GenericDestinationParameter
-                            {
-                                Destination = GetAbsoluteDestination(x.Key.Path, _backupSettings.Destination),
-                                Source = x.Value
-                            })
-                        .ToArray();
-
-                    _parallelFileSystemManipulator.Do(param =>
-                        {
-                            var castedParam = (GenericDestinationParameter) param;
-
-                            _fileCopier.Copy(param.Source.ToString(), castedParam.Destination);
-                        },
-                        actionParams);
+                    _fileSystemActionExecutor.Execute(
+                        batchedEntries.Select(x => x.Value),
+                        _backupSettings);
                 }
             }
-        }
-
-        private static string GetAbsoluteDestination(string source, string destination)
-        {
-            string sourceRelative = source.Replace(Path.GetPathRoot(source), string.Empty);
-
-            return Path.Combine(destination, sourceRelative);
         }
     }
 }

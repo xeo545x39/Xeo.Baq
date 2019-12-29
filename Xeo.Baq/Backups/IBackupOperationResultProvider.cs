@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Xeo.Baq
+namespace Xeo.Baq.Backups
 {
     public interface IBackupOperationResultProvider
     {

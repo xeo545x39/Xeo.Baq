@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using Xeo.Baq.Backups;
 using Xeo.Baq.Configuration.DependencyInjection;
 
 namespace Xeo.Baq

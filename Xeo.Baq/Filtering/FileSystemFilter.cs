@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 
 namespace Xeo.Baq.Filtering
 {
@@ -13,6 +14,6 @@ namespace Xeo.Baq.Filtering
         public string Regex { get; set; }
 
         public FileSystemEntryType EntryType { get; set; }
-        public FileAttributes Attributes { get; set; }
+        public IEnumerable<FileAttributes> Attributes { get; set; }
     }
 }

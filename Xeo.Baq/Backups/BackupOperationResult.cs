@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xeo.Baq
+namespace Xeo.Baq.Backups
 {
     public class BackupOperationResult
     {

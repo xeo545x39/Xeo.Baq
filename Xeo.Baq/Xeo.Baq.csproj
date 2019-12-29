@@ -37,6 +37,7 @@
       <HintPath>..\packages\Autofac.4.9.4\lib\net45\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
       <Private>True</Private>
@@ -54,12 +55,17 @@
       <HintPath>..\packages\NetCoreEx.Geometry.3.0.0\lib\netstandard1.4\NetCoreEx.Geometry.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c">
+      <HintPath>..\packages\NLog.4.6.8\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <HintPath>..\packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
       <Private>True</Private>
@@ -136,6 +142,7 @@
       <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
       <Private>True</Private>
@@ -152,10 +159,12 @@
       <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <HintPath>..\packages\System.Text.RegularExpressions.4.3.0\lib\net463\System.Text.RegularExpressions.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -168,11 +177,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackupManager.cs" />
-    <Compile Include="BackupOperationResult.cs" />
+    <Compile Include="Backups\BackupManager.cs" />
+    <Compile Include="Backups\BackupOperationResult.cs" />
+    <Compile Include="Backups\DummyBackupOperationResultProvider.cs" />
+    <Compile Include="Backups\FileSystemActionExecutor.cs" />
+    <Compile Include="Backups\IBackupOperationResultProvider.cs" />
     <Compile Include="Configuration\DependencyInjection\Container.cs" />
-    <Compile Include="DummyBackupOperationResultProvider.cs" />
-    <Compile Include="IBackupOperationResultProvider.cs" />
     <Compile Include="Backups\FullBackupPerformer.cs" />
     <Compile Include="Backups\IBackupPerformer.cs" />
     <Compile Include="Configuration\ApplicationSettings.cs" />
@@ -183,18 +193,27 @@
     <Compile Include="Filtering\BackupEntry.cs" />
     <Compile Include="Filtering\FileSystemEntryType.cs" />
     <Compile Include="Filtering\FileSystemFilter.cs" />
+    <Compile Include="IO\CreateDirectoryActionParameter.cs" />
     <Compile Include="IO\DummyFileCopier.cs" />
+    <Compile Include="IO\IDirectoryCreator.cs" />
     <Compile Include="IO\IFileCopier.cs" />
+    <Compile Include="IO\ManagedDirectoryCreator.cs" />
     <Compile Include="IO\ManagedFileCopier.cs" />
     <Compile Include="IO\OverlappedFileCopier.cs" />
     <Compile Include="IO\IFileSystemActionParameter.cs" />
-    <Compile Include="IO\GenericDestinationParameter.cs" />
+    <Compile Include="IO\CopyFileActionParameter.cs" />
     <Compile Include="IO\ParallelFileSystemManipulator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NLog.xsd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

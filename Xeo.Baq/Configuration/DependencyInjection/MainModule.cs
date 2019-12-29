@@ -2,6 +2,7 @@
 using System.IO;
 using Autofac;
 using NCrontab;
+using NLog;
 using Xeo.Baq.Backups;
 using Xeo.Baq.Filtering;
 using Xeo.Baq.IO;
@@ -12,10 +13,8 @@ namespace Xeo.Baq.Configuration.DependencyInjection
     {
         protected override void Load(ContainerBuilder builder)
         {
-            // builder.RegisterAssemblyTypes()
-            //     .Where(t => t.Namespace.StartsWith("Xeo"))
-            //     .PublicOnly()
-            //     .AsImplementedInterfaces();
+            builder.RegisterInstance(LogManager.GetLogger("Default"))
+                .As<ILogger>();
 
             builder.RegisterType<BackupManager>()
                 .As<IBackupManager>();
@@ -26,16 +25,7 @@ namespace Xeo.Baq.Configuration.DependencyInjection
                     ParallelOperationMaxItems = 50
                 })
                 .AsSelf();
-
-            builder.RegisterType<ParallelFileSystemManipulator>()
-                .As<IParallelFileSystemManipulator>();
-
-            builder.RegisterType<DummyBackupOperationResultProvider>()
-                .As<IBackupOperationResultProvider>();
-
-            builder.RegisterType<DummyFileCopier>()
-                .As<IFileCopier>();
-
+            
             builder.RegisterInstance(new BackupSettings
                 {
                     Id = Guid.NewGuid(),
@@ -45,8 +35,8 @@ namespace Xeo.Baq.Configuration.DependencyInjection
                     {
                         new FileSystemFilter
                         {
-                            Attributes = FileAttributes.Normal,
-                            Path = @"F:\Xeo.Baq\Source\",
+                            Attributes = new[] { FileAttributes.Archive, FileAttributes.Normal, FileAttributes.Directory },
+                            Path = @"F:\Xeo.Baq\Source\*",
                             EntryType = FileSystemEntryType.Directory | FileSystemEntryType.File,
                             NameMask = "*"
                         }
@@ -55,9 +45,24 @@ namespace Xeo.Baq.Configuration.DependencyInjection
                 })
                 .AsSelf();
 
+            builder.RegisterType<ParallelFileSystemManipulator>()
+                .As<IParallelFileSystemManipulator>();
+
+            builder.RegisterType<DummyBackupOperationResultProvider>()
+                .As<IBackupOperationResultProvider>();
+
+            builder.RegisterType<ManagedFileCopier>()
+                .As<IFileCopier>();
+
+            builder.RegisterType<ManagedDirectoryCreator>()
+                .As<IDirectoryCreator>();
+
             builder.RegisterType<BackupEntriesProvider>()
                 .As<IBackupEntriesProvider>();
-            
+
+            builder.RegisterType<FileSystemActionExecutor>()
+                .As<IFileSystemActionExecutor>();
+
             builder.RegisterType<FullBackupPerformer>()
                 .AsSelf();
 
@@ -65,8 +70,7 @@ namespace Xeo.Baq.Configuration.DependencyInjection
                 {
                     var context = contextRoot.Resolve<IComponentContext>();
 
-                    return settings => context.Resolve<FullBackupPerformer>(
-                        new TypedParameter(typeof(BackupSettings), settings));
+                    return settings => context.Resolve<FullBackupPerformer>(new TypedParameter(typeof(BackupSettings), settings));
                 })
                 .As<Func<BackupSettings, FullBackupPerformer>>();
         }

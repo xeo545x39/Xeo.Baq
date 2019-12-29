@@ -1,12 +1,26 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using NLog;
 
 namespace Xeo.Baq.IO
 {
-    public class ManagedDirectoryCopier : ISystemFileCopier
+    public class ManagedDirectoryCreator : IDirectoryCreator
     {
-        public void Copy(string source, string destination)
+        private readonly ILogger _logger;
+
+        public ManagedDirectoryCreator(ILogger logger)
         {
-            Directory.CreateDirectory()
+            _logger = logger;
+        }
+        
+        public void Create(string destination)
+        {
+            if (!Directory.Exists(destination))
+            {
+                _logger.Info($"Creating directory '{destination}'.");
+
+                Directory.CreateDirectory(destination);
+            }
         }
     }
 }
