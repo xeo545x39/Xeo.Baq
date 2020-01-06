@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using NLog;
 
 namespace Xeo.Baq.IO
@@ -9,10 +8,8 @@ namespace Xeo.Baq.IO
         private readonly ILogger _logger;
 
         public ManagedDirectoryCreator(ILogger logger)
-        {
-            _logger = logger;
-        }
-        
+            => _logger = logger;
+
         public void Create(string destination)
         {
             if (!Directory.Exists(destination))

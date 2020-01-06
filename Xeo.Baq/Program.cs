@@ -13,7 +13,7 @@ namespace Xeo.Baq
             {
                 var backupManger = scope.Resolve<IBackupManager>();
 
-                backupManger.RunBackups();
+                backupManger.RunAllBackups();
             }
 
             Console.Read();

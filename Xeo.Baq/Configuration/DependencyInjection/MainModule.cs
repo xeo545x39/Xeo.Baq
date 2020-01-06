@@ -4,6 +4,7 @@ using Autofac;
 using NCrontab;
 using NLog;
 using Xeo.Baq.Backups;
+using Xeo.Baq.Exceptions;
 using Xeo.Baq.Filtering;
 using Xeo.Baq.IO;
 
@@ -25,7 +26,7 @@ namespace Xeo.Baq.Configuration.DependencyInjection
                     ParallelOperationMaxItems = 50
                 })
                 .AsSelf();
-            
+
             builder.RegisterInstance(new BackupSettings
                 {
                     Id = Guid.NewGuid(),
@@ -65,6 +66,26 @@ namespace Xeo.Baq.Configuration.DependencyInjection
 
             builder.RegisterType<FullBackupPerformer>()
                 .AsSelf();
+
+            builder.RegisterType<GenericExceptionHandler>()
+                .As<IGenericExceptionHandler>()
+                .InstancePerDependency();
+
+            builder.Register<Func<IGenericExceptionHandler>>(context => context.Resolve<IGenericExceptionHandler>)
+                .As<Func<IGenericExceptionHandler>>();
+
+            builder.RegisterType<ExceptionHandlerChainBuilder>()
+                .As<IExceptionHandlerChainBuilder>()
+                .InstancePerDependency();
+
+            builder.Register<Func<IExceptionHandler, IExceptionHandlerChainBuilder>>(contextRoot =>
+                {
+                    var context = contextRoot.Resolve<IComponentContext>();
+
+                    return exceptionHandler
+                        => context.Resolve<IExceptionHandlerChainBuilder>(new TypedParameter(typeof(IExceptionHandler), exceptionHandler));
+                })
+                .As<Func<IExceptionHandlerChainBuilder>>();
 
             builder.Register<Func<BackupSettings, FullBackupPerformer>>(contextRoot =>
                 {

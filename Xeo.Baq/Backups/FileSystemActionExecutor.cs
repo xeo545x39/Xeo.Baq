@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Xeo.Baq.Configuration;
+using Xeo.Baq.Exceptions;
 using Xeo.Baq.Filtering;
 using Xeo.Baq.IO;
 
@@ -16,15 +18,18 @@ namespace Xeo.Baq.Backups
     {
         private readonly IDirectoryCreator _directoryCreator;
         private readonly IFileCopier _fileCopier;
+        private readonly Func<IGenericExceptionHandler> _genericExceptionHandlerFactory;
         private readonly IParallelFileSystemManipulator _parallelFileSystemManipulator;
 
         public FileSystemActionExecutor(IParallelFileSystemManipulator parallelFileSystemManipulator,
             IFileCopier fileCopier,
-            IDirectoryCreator directoryCreator)
+            IDirectoryCreator directoryCreator,
+            Func<IGenericExceptionHandler> genericExceptionHandlerFactory)
         {
             _parallelFileSystemManipulator = parallelFileSystemManipulator;
             _fileCopier = fileCopier;
             _directoryCreator = directoryCreator;
+            _genericExceptionHandlerFactory = genericExceptionHandlerFactory;
         }
 
         public void Execute(IEnumerable<BackupEntry> entries, BackupSettings backupSettings)
@@ -39,8 +44,11 @@ namespace Xeo.Baq.Backups
                     {
                         string destinationDirectory = Path.GetDirectoryName(copyFileParameter.Destination);
 
-                        _directoryCreator.Create(destinationDirectory);
-                        _fileCopier.Copy(copyFileParameter.Source.ToString(), copyFileParameter.Destination);
+                        IGenericExceptionHandler exceptionHandler = _genericExceptionHandlerFactory();
+
+                        exceptionHandler
+                            .Handle(() => _directoryCreator.Create(destinationDirectory))
+                            .ContinueOnSuccess(() => _fileCopier.Copy(copyFileParameter.Source.ToString(), copyFileParameter.Destination));
                     }
                     else if (param is CreateDirectoryActionParameter createDirectoryParam)
                     {
