@@ -71,7 +71,12 @@ namespace Xeo.Baq.Configuration.DependencyInjection
                 .As<IGenericExceptionHandler>()
                 .InstancePerDependency();
 
-            builder.Register<Func<IGenericExceptionHandler>>(context => context.Resolve<IGenericExceptionHandler>)
+            builder.Register<Func<IGenericExceptionHandler>>(contextRoot =>
+                {
+                    var context = contextRoot.Resolve<IComponentContext>();
+
+                    return () => context.Resolve<IGenericExceptionHandler>();
+                })
                 .As<Func<IGenericExceptionHandler>>();
 
             builder.RegisterType<ExceptionHandlerChainBuilder>()
@@ -85,13 +90,14 @@ namespace Xeo.Baq.Configuration.DependencyInjection
                     return exceptionHandler
                         => context.Resolve<IExceptionHandlerChainBuilder>(new TypedParameter(typeof(IExceptionHandler), exceptionHandler));
                 })
-                .As<Func<IExceptionHandlerChainBuilder>>();
+                .As<Func<IExceptionHandler, IExceptionHandlerChainBuilder>>();
 
             builder.Register<Func<BackupSettings, FullBackupPerformer>>(contextRoot =>
                 {
                     var context = contextRoot.Resolve<IComponentContext>();
 
-                    return settings => context.Resolve<FullBackupPerformer>(new TypedParameter(typeof(BackupSettings), settings));
+                    return settings
+                        => context.Resolve<FullBackupPerformer>(new TypedParameter(typeof(BackupSettings), settings));
                 })
                 .As<Func<BackupSettings, FullBackupPerformer>>();
         }

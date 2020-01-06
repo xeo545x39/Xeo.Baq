@@ -6,8 +6,11 @@ namespace Xeo.Baq.Exceptions
 {
     public interface IGenericExceptionHandler : IExceptionHandler
     {
-        IExceptionHandlerChainBuilder Handle(Action handledAction, string actionDescription);
-        IExceptionHandlerChainBuilder Handle(Action<Exception> handledAction, string actionDescription, Exception exception);
+        IExceptionHandlerChainBuilder Handle(Action<IExceptionHandlerAction> handledAction, string actionDescription);
+
+        IExceptionHandlerChainBuilder Handle(Action<IExceptionHandlerAction, Exception> handledAction,
+            string actionDescription,
+            Exception exception);
     }
 
     public class GenericExceptionHandler : IGenericExceptionHandler
@@ -24,52 +27,59 @@ namespace Xeo.Baq.Exceptions
             _exceptionHandlerChainBuilder = exceptionHandlerChainBuilderFactory(this);
         }
 
-        public IExceptionHandlerChainBuilder Handle(Action handledAction, string actionDescription)
+        public IExceptionHandlerChainBuilder Handle(Action<IExceptionHandlerAction> handledAction, string actionDescription)
         {
+            var action = new ExceptionHandlerAction();
+
             try
             {
-                handledAction();
+                handledAction(action);
 
                 _exceptionHandlerChainBuilder.SendSuccess();
             }
             catch (Exception ex)
             {
-                _catchedList.Add(ex);
-                _logger.Error(ex, $"Error occured during the '{actionDescription}' operation.");
-
-                _exceptionHandlerChainBuilder.SendException(ex);
+                Catch(ex, action);
             }
 
             return _exceptionHandlerChainBuilder;
         }
 
-        public IExceptionHandlerChainBuilder Handle(Action<Exception> handledAction, string actionDescription, Exception exception)
+        public IExceptionHandlerChainBuilder Handle(Action<IExceptionHandlerAction, Exception> handledAction,
+            string actionDescription,
+            Exception exception)
         {
+            var action = new ExceptionHandlerAction();
+
             try
             {
-                handledAction(exception);
+                handledAction(action, exception);
 
                 _exceptionHandlerChainBuilder.SendSuccess();
             }
             catch (Exception ex)
             {
-                _catchedList.Add(ex);
-                _logger.Error(ex, $"Error occured during the '{actionDescription}' operation.");
-
-                _exceptionHandlerChainBuilder.SendException(ex);
+                Catch(ex, action);
             }
 
             return _exceptionHandlerChainBuilder;
         }
 
-
-        IExceptionHandlerChainBuilder IExceptionHandler.Handle(Action handledAction)
+        IExceptionHandlerChainBuilder IExceptionHandler.Handle(Action<IExceptionHandlerAction> handledAction)
             => Handle(handledAction, "Generic action");
 
-        public IExceptionHandlerChainBuilder Handle(Action<Exception> handledAction, Exception exception)
+        public IExceptionHandlerChainBuilder Handle(Action<IExceptionHandlerAction, Exception> handledAction, Exception exception)
             => Handle(handledAction, "Generic action", exception);
 
         public IEnumerable<Exception> GetCatchedExceptions()
             => _catchedList;
+
+        private void Catch(Exception ex, ExceptionHandlerAction action)
+        {
+            _catchedList.Add(ex);
+            _logger.Error(ex, $"Error occured during the \"{action.Description}\" operation. Exception: {ex}");
+
+            _exceptionHandlerChainBuilder.SendException(ex);
+        }
     }
 }

@@ -7,8 +7,8 @@ namespace Xeo.Baq.Exceptions
     {
         void SendSuccess();
         void SendException(Exception ex);
-        IExceptionHandlerChainBuilder ContinueOnSuccess(Action action);
-        IExceptionHandlerChainBuilder ContinueOnException(Action<Exception> action);
+        IExceptionHandlerChainBuilder ContinueOnSuccess(Action<IExceptionHandlerAction> action);
+        IExceptionHandlerChainBuilder ContinueOnException(Action<IExceptionHandlerAction, Exception> action);
     }
 
     public class ExceptionHandlerChainBuilder : IExceptionHandlerChainBuilder
@@ -25,7 +25,7 @@ namespace Xeo.Baq.Exceptions
         public void SendException(Exception ex)
             => _lastException = ex;
 
-        public IExceptionHandlerChainBuilder ContinueOnSuccess(Action action)
+        public IExceptionHandlerChainBuilder ContinueOnSuccess(Action<IExceptionHandlerAction> action)
             => this.ReturnThis(() =>
             {
                 if (_lastException == null)
@@ -34,7 +34,7 @@ namespace Xeo.Baq.Exceptions
                 }
             });
 
-        public IExceptionHandlerChainBuilder ContinueOnException(Action<Exception> action)
+        public IExceptionHandlerChainBuilder ContinueOnException(Action<IExceptionHandlerAction, Exception> action)
             => this.ReturnThis(() =>
             {
                 if (_lastException != null)

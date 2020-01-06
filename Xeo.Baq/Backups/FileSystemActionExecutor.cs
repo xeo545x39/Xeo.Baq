@@ -47,8 +47,19 @@ namespace Xeo.Baq.Backups
                         IGenericExceptionHandler exceptionHandler = _genericExceptionHandlerFactory();
 
                         exceptionHandler
-                            .Handle(() => _directoryCreator.Create(destinationDirectory))
-                            .ContinueOnSuccess(() => _fileCopier.Copy(copyFileParameter.Source.ToString(), copyFileParameter.Destination));
+                            .Handle(action =>
+                            {
+                                action.Describe($"Directory creation \"{destinationDirectory}\".");
+                                _directoryCreator.Create(destinationDirectory);
+                            })
+                            .ContinueOnSuccess(action =>
+                            {
+                                var source = copyFileParameter.Source.ToString();
+                                string destination = copyFileParameter.Destination;
+
+                                action.Describe($"File copying from \"{source}\" to \"{destination}\".");
+                                _fileCopier.Copy(source, destination);
+                            });
                     }
                     else if (param is CreateDirectoryActionParameter createDirectoryParam)
                     {

@@ -5,8 +5,8 @@ namespace Xeo.Baq.Exceptions
 {
     public interface IExceptionHandler
     {
-        IExceptionHandlerChainBuilder Handle(Action handledAction);
-        IExceptionHandlerChainBuilder Handle(Action<Exception> handledAction, Exception exception);
+        IExceptionHandlerChainBuilder Handle(Action<IExceptionHandlerAction> handledAction);
+        IExceptionHandlerChainBuilder Handle(Action<IExceptionHandlerAction, Exception> handledAction, Exception exception);
         IEnumerable<Exception> GetCatchedExceptions();
     }
 }

@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="All Places" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a78de1c2-04e8-4964-8580-b3b59304eb60" name="Default Changelist" comment="Updated gitignore">
+    <list default="true" id="a78de1c2-04e8-4964-8580-b3b59304eb60" name="Default Changelist" comment="Added exception handler action object">
       <changelist_data name="Xeo" email="" />
-      <change afterPath="$PROJECT_DIR$/Xeo.Baq/Exceptions/GenericExceptionHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandlerChainBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Xeo.Baq/Extensions/AnyTypeExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Xeo.Baq/Exceptions/ExceptionHandlerAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Xeo.Baq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Xeo.Baq/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Xeo.Baq/Backups/BackupManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/Backups/BackupManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Xeo.Baq/Backups/FileSystemActionExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/Backups/FileSystemActionExecutor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Xeo.Baq/Configuration/DependencyInjection/MainModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/Configuration/DependencyInjection/MainModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Xeo.Baq/Exceptions/GenericExceptionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/Exceptions/GenericExceptionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandlerChainBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/Exceptions/ExceptionHandlerChainBuilder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Xeo.Baq/IO/ManagedDirectoryCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/IO/ManagedDirectoryCreator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Xeo.Baq/IO/ManagedFileCopier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/IO/ManagedFileCopier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Xeo.Baq/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Xeo.Baq/IO/OverlappedFileCopier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/IO/OverlappedFileCopier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Xeo.Baq/NLog.config" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/NLog.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Xeo.Baq/Xeo.Baq.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Xeo.Baq/Xeo.Baq.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +89,7 @@
     <setting file="file://$PROJECT_DIR$/Xeo.Baq/packages.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/658271AA-00D0-42A5-A887-5350393FEE96/10/98db1a20/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Xeo.Baq/Configuration/DependencyInjection/Container.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandlerChainBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Exceptions/ExceptionHandlerChainBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2FAD6ED0-0478-4647-B955-5CB639266F73/9/RegistrationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Xeo.Baq/Extensions/AnyTypeExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/DummyFileCopier.cs" root0="FORCE_HIGHLIGHTING" />
@@ -102,6 +101,7 @@
     <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/ManagedFileCopier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Xeo.Baq/Filtering/FileSystemEntryType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Xeo.Baq/NLog.config" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Xeo.Baq/Exceptions/ExceptionHandlerAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/c2/1a8b3ef2/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/05/0192e6b5/FlagsAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Xeo.Baq/IO/IFileCopier.cs" root0="FORCE_HIGHLIGHTING" />
@@ -110,9 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Xeo.Baq/IO/GenericSourceDestinationParameters.cs" />
-        <option value="$PROJECT_DIR$/Xeo.Baq/FileSystemFilter.cs" />
-        <option value="$PROJECT_DIR$/Xeo.Baq/ApplicationSettings.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/BackupEntry.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/IBackupPerformer.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/BackupSettings.cs" />
@@ -147,20 +144,23 @@
         <option value="$PROJECT_DIR$/Xeo.Baq/IO/CreateDirectoryActionParameter.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/Filtering/BackupEntriesProvider.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/Backups/FullBackupPerformer.cs" />
-        <option value="$PROJECT_DIR$/Xeo.Baq/IO/ManagedDirectoryCreator.cs" />
-        <option value="$PROJECT_DIR$/Xeo.Baq/IO/ManagedFileCopier.cs" />
-        <option value="$PROJECT_DIR$/Xeo.Baq/NLog.config" />
         <option value="$PROJECT_DIR$/.git/COMMIT_EDITMSG" />
         <option value="$PROJECT_DIR$/Xeo.Baq/Exceptions/BackupPerformingExceptionHandler.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/Exceptions/FileCopyingExceptionHandler.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/Extensions/IExceptionHandlerChainBuilderExtensions.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/Extensions/AnyTypeExtensions.cs" />
-        <option value="$PROJECT_DIR$/Xeo.Baq/Configuration/DependencyInjection/MainModule.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/Backups/BackupManager.cs" />
-        <option value="$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandler.cs" />
-        <option value="$PROJECT_DIR$/Xeo.Baq/Exceptions/GenericExceptionHandler.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandlerChainBuilder.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Configuration/DependencyInjection/MainModule.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/OverlappedFileCopier.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandlerAction.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Exceptions/IExceptionHandler.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Exceptions/ExceptionHandlerChainBuilder.cs" />
         <option value="$PROJECT_DIR$/Xeo.Baq/Backups/FileSystemActionExecutor.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/ManagedFileCopier.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/IO/ManagedDirectoryCreator.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/Exceptions/GenericExceptionHandler.cs" />
+        <option value="$PROJECT_DIR$/Xeo.Baq/NLog.config" />
       </list>
     </option>
   </component>
@@ -229,7 +229,7 @@
       <workItem from="1577575048428" duration="1304000" />
       <workItem from="1577576376373" duration="1255000" />
       <workItem from="1577650005417" duration="10861000" />
-      <workItem from="1578261073934" duration="8749000" />
+      <workItem from="1578261073934" duration="13003000" />
     </task>
     <task id="LOCAL-00001" summary="Removed Idea folder">
       <created>1577576629417</created>
@@ -245,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577576949573</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added exception handler">
+      <created>1578270052569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578270052569</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +275,9 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Removed Idea folder" />
     <MESSAGE value="Updated gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore" />
+    <MESSAGE value="Added exception handler" />
+    <MESSAGE value="Added exception handler action object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added exception handler action object" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -282,10 +291,10 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="1067" y="424" key="#xdebugger.evaluate/62.0.2498.1440@62.0.2498.1440" timestamp="1577655214683" />
-    <state x="1070" y="583" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1578269987655">
+    <state x="1070" y="583" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1578272954425">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="1070" y="583" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/62.0.2498.1440@62.0.2498.1440" timestamp="1578269987655" />
+    <state x="1070" y="583" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/62.0.2498.1440@62.0.2498.1440" timestamp="1578272954425" />
     <state width="492" height="813" key="DebuggerActiveHint" timestamp="1577660131737">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -294,166 +303,166 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="155" y="93" width="2313" height="1255" key="DiffContextDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1577576813490" />
-    <state width="1060" height="414" key="GridCell.Tab.0.bottom" timestamp="1577660903767">
+    <state width="1060" height="362" key="GridCell.Tab.0.bottom" timestamp="1578274046317">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.0.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1060" height="414" key="GridCell.Tab.0.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903767" />
-    <state width="1060" height="414" key="GridCell.Tab.0.center" timestamp="1577660903767">
+    <state width="1060" height="362" key="GridCell.Tab.0.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046317" />
+    <state width="1060" height="362" key="GridCell.Tab.0.center" timestamp="1578274046317">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.0.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1060" height="414" key="GridCell.Tab.0.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903767" />
-    <state width="1060" height="414" key="GridCell.Tab.0.left" timestamp="1577660903767">
+    <state width="1060" height="362" key="GridCell.Tab.0.center/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046317" />
+    <state width="1060" height="362" key="GridCell.Tab.0.left" timestamp="1578274046317">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.0.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1060" height="414" key="GridCell.Tab.0.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903767" />
-    <state width="1060" height="414" key="GridCell.Tab.0.right" timestamp="1577660903767">
+    <state width="1060" height="362" key="GridCell.Tab.0.left/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046317" />
+    <state width="1060" height="362" key="GridCell.Tab.0.right" timestamp="1578274046317">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.0.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1060" height="414" key="GridCell.Tab.0.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903767" />
-    <state width="1061" height="362" key="GridCell.Tab.1.bottom" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.0.right/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046317" />
+    <state width="1060" height="362" key="GridCell.Tab.1.bottom" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.1.bottom.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.1.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.1.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.1.center" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.1.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.1.center" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.1.center.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.1.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.1.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.1.left" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.1.center/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.1.left" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.1.left.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.1.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.1.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.1.right" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.1.left/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.1.right" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.1.right.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.1.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.1.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.2.bottom" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.1.right/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.2.bottom" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.2.bottom.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.2.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.2.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.2.center" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.2.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.2.center" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.2.center.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.2.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.2.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.2.left" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.2.center/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.2.left" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.2.left.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.2.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.2.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.2.right" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.2.left/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.2.right" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.2.right.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.2.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.2.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.3.bottom" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.2.right/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.3.bottom" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.3.bottom.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.3.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.3.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.3.center" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.3.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.3.center" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.3.center.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.3.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.3.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.3.left" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.3.center/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.3.left" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.3.left.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.3.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.3.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.3.right" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.3.left/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.3.right" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.3.right.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.3.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.3.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.4.bottom" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.3.right/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.4.bottom" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.4.bottom.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.4.bottom.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.4.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.4.center" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.4.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.4.center" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.4.center.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.4.center.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.4.center/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.4.left" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.4.center/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.4.left" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.4.left.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.4.left.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.4.left/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
-    <state width="1061" height="362" key="GridCell.Tab.4.right" timestamp="1577660903765">
+    <state width="1060" height="362" key="GridCell.Tab.4.left/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
+    <state width="1060" height="362" key="GridCell.Tab.4.right" timestamp="1578274046017">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.4.right.inPresentationMode" timestamp="1577574742895">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state width="1227" height="508" key="GridCell.Tab.4.right.inPresentationMode/62.0.2498.1440@62.0.2498.1440" timestamp="1577574742895" />
-    <state width="1061" height="362" key="GridCell.Tab.4.right/62.0.2498.1440@62.0.2498.1440" timestamp="1577660903765" />
+    <state width="1060" height="362" key="GridCell.Tab.4.right/62.0.2498.1440@62.0.2498.1440" timestamp="1578274046017" />
     <state x="942" y="574" key="Performance.Activity.Monitor" timestamp="1577575155306">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -478,10 +487,10 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="1142" y="591" key="VCS.EditChangelistDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1577575572831" />
-    <state x="904" y="454" key="Vcs.Push.Dialog.v2" timestamp="1578270005519">
+    <state x="904" y="454" key="Vcs.Push.Dialog.v2" timestamp="1578272450220">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="904" y="454" key="Vcs.Push.Dialog.v2/62.0.2498.1440@62.0.2498.1440" timestamp="1578270005519" />
+    <state x="904" y="454" key="Vcs.Push.Dialog.v2/62.0.2498.1440@62.0.2498.1440" timestamp="1578272450220" />
     <state x="1069" y="336" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577484074397">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -494,14 +503,14 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="684" y="563" width="705" height="305" key="org.intellij.images.editor.actions.BackgroundImageDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1577567021079" />
-    <state x="968" y="341" key="run.anything.popup" timestamp="1578264192090">
+    <state x="968" y="341" key="run.anything.popup" timestamp="1578272392265">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="968" y="341" key="run.anything.popup/62.0.2498.1440@62.0.2498.1440" timestamp="1578264192090" />
-    <state x="974" y="321" width="672" height="682" key="search.everywhere.popup" timestamp="1578262012153">
+    <state x="968" y="341" key="run.anything.popup/62.0.2498.1440@62.0.2498.1440" timestamp="1578272392265" />
+    <state x="974" y="321" width="672" height="682" key="search.everywhere.popup" timestamp="1578272419486">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="974" y="321" width="672" height="682" key="search.everywhere.popup/62.0.2498.1440@62.0.2498.1440" timestamp="1578262012153" />
+    <state x="974" y="321" width="672" height="682" key="search.everywhere.popup/62.0.2498.1440@62.0.2498.1440" timestamp="1578272419486" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

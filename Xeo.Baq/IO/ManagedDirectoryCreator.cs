@@ -14,7 +14,7 @@ namespace Xeo.Baq.IO
         {
             if (!Directory.Exists(destination))
             {
-                _logger.Info($"Creating directory '{destination}'.");
+                _logger.Info($"Creating directory \"{destination}\".");
 
                 Directory.CreateDirectory(destination);
             }
