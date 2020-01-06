@@ -4,6 +4,7 @@ using System.Linq;
 using NLog;
 using Xeo.Baq.Backups.Performers;
 using Xeo.Baq.Configuration;
+using Xeo.Baq.Diagnostics;
 
 namespace Xeo.Baq.Backups
 {
@@ -56,20 +57,23 @@ namespace Xeo.Baq.Backups
         {
             Func<BackupSettings, IBackupPerformer> factory = GetBackupPerformerFactory(settings.BackupType);
             IBackupPerformer performer = factory(settings);
+            TimeSpan backupDuration = default;
 
             _logger.Info($"Started performing backup with Id = \"{settings.Id}\".");
 
             try
             {
-                performer.Perform();
+                Measured.Go(() => performer.Perform(), out backupDuration);
             }
             catch (Exception e)
             {
                 _logger.Info($"Error occurred while performing backup with Id = \"{settings.Id}\".");
                 throw;
             }
-
-            _logger.Info($"Finished performing backup with Id = \"{settings.Id}\".");
+            finally
+            {
+                _logger.Info($"Finished performing backup with Id = \"{settings.Id}\". Duration: {backupDuration}");
+            }
         }
 
         private Func<BackupSettings, IBackupPerformer> GetBackupPerformerFactory(Type backupType)
