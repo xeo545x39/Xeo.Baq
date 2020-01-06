@@ -45,7 +45,7 @@ namespace Xeo.Baq.Backups
             BackupSettings settings = _backupSettingsList.SingleOrDefault(x => x.Id == id);
             if (settings == null)
             {
-                throw new InvalidOperationException($"There is no backup with Id = '{id}'.");
+                throw new InvalidOperationException($"There is no backup with Id = \"{id}\".");
             }
 
             RunInternal(settings);
@@ -56,7 +56,7 @@ namespace Xeo.Baq.Backups
             Func<BackupSettings, IBackupPerformer> factory = GetBackupPerformerFactory(settings.BackupType);
             IBackupPerformer performer = factory(settings);
 
-            _logger.Info($"Started performing backup with Id = '{settings.Id}'.");
+            _logger.Info($"Started performing backup with Id = \"{settings.Id}\".");
 
             try
             {
@@ -64,11 +64,11 @@ namespace Xeo.Baq.Backups
             }
             catch (Exception e)
             {
-                _logger.Info($"Error occurred while performing backup with Id = '{settings.Id}'.");
+                _logger.Info($"Error occurred while performing backup with Id = \"{settings.Id}\".");
                 throw;
             }
 
-            _logger.Info($"Finished performing backup with Id = '{settings.Id}'.");
+            _logger.Info($"Finished performing backup with Id = \"{settings.Id}\".");
         }
 
         private Func<BackupSettings, IBackupPerformer> GetBackupPerformerFactory(Type backupType)
@@ -78,7 +78,7 @@ namespace Xeo.Baq.Backups
                 return _fullBackupPerformerFactory;
             }
 
-            throw new InvalidOperationException($"Cannot provide backup performer factory for backup type '{backupType.FullName}'");
+            throw new InvalidOperationException($"Cannot provide backup performer factory for backup type \"{backupType.FullName}\".");
         }
     }
 }
