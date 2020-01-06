@@ -4,6 +4,7 @@ using Autofac;
 using NCrontab;
 using NLog;
 using Xeo.Baq.Backups;
+using Xeo.Baq.Backups.Performers;
 using Xeo.Baq.Exceptions;
 using Xeo.Baq.Filtering;
 using Xeo.Baq.IO;

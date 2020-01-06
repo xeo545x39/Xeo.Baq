@@ -1,4 +1,4 @@
-﻿namespace Xeo.Baq.Backups
+﻿namespace Xeo.Baq.Backups.Performers
 {
     public interface IBackupPerformer
     {

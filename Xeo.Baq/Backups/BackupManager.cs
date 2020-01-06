@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using NLog;
+using Xeo.Baq.Backups.Performers;
 using Xeo.Baq.Configuration;
 
 namespace Xeo.Baq.Backups
