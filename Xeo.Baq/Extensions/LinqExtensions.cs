@@ -32,6 +32,27 @@ namespace Xeo.Baq.Extensions
             return source;
         }
 
+        public static IEnumerable<TElement> ConditionalWhere<TElement>(this IEnumerable<TElement> source,
+            Func<IEnumerable<TElement>, bool> condition,
+            Func<TElement, bool> wherePredicate)
+        {
+            if (condition(source))
+            {
+                return source.Where(wherePredicate);
+            }
+
+            return source;
+        }
+
+        public static IEnumerable<T> ForEach<T>(this IEnumerable<T> source, Action<T> action)
+            => source.ReturnThis(() =>
+            {
+                foreach (T x in source)
+                {
+                    action(x);
+                }
+            });
+
         private static IEnumerable<T> YieldBatchElements<T>(IEnumerator<T> source, int batchSize)
         {
             yield return source.Current;

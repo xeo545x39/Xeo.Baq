@@ -12,9 +12,16 @@ namespace Xeo.Baq.IO
 
         public void Copy(string source, string destination)
         {
-            _logger.Info($"Copying file from \"{source}\" to \"{destination}\"");
+            _logger.Info($"Copying file from \"{source}\" to \"{destination}\".");
 
             File.Copy(source, destination);
+        }
+
+        public void Copy(byte[] fileContent, string destination)
+        {
+            _logger.Info($"Copying file from memory to \"{destination}\".");
+
+            File.WriteAllBytes(destination, fileContent);
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Xeo.Baq.Diagnostics
 {
     public static class Measured
     {
-        public static void Go(Action action, out TimeSpan elapsed)
+        public static void Run(Action action, out TimeSpan elapsed)
         {
             var stopwatch = Stopwatch.StartNew();
 
@@ -15,7 +15,7 @@ namespace Xeo.Baq.Diagnostics
             }
             catch (Exception ex)
             {
-                throw new Exception("An exception was thrown during a measured block.", ex);
+                throw new Exception("An exception was thrown inside a measured code block.", ex);
             }
             finally
             {

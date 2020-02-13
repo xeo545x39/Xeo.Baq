@@ -54,12 +54,12 @@ namespace Xeo.Baq.Filtering
         {
             if (filter.EntryType.HasFlag(FileSystemEntryType.Directory))
             {
-                IEnumerable<string> directories = GetDirectories(shouldSearchSub, filter, searchPattern);
+                IEnumerable<DirectoryInfo> directories = GetDirectories(shouldSearchSub, filter, searchPattern);
 
-                foreach (string directory in directories)
+                foreach (DirectoryInfo directory in directories)
                 {
-                    var key = new BackupEntryKey(directory);
-                    backupEntries.Add(key, new BackupEntry(key, FileSystemEntryType.Directory));
+                    var key = new BackupEntryKey(directory.FullName);
+                    backupEntries.Add(key, new DirectoryBackupEntry(key, directory));
                 }
             }
         }
@@ -71,12 +71,12 @@ namespace Xeo.Baq.Filtering
         {
             if (filter.EntryType.HasFlag(FileSystemEntryType.File))
             {
-                IEnumerable<string> files = GetFiles(shouldSearchSub, filter, searchPattern);
+                IEnumerable<FileInfo> files = GetFiles(shouldSearchSub, filter, searchPattern);
 
-                foreach (string file in files)
+                foreach (FileInfo file in files)
                 {
-                    var key = new BackupEntryKey(file);
-                    backupEntries.Add(key, new BackupEntry(key, FileSystemEntryType.File));
+                    var key = new BackupEntryKey(file.FullName);
+                    backupEntries.Add(key, new FileBackupEntry(key, file));
                 }
             }
         }
@@ -96,43 +96,37 @@ namespace Xeo.Baq.Filtering
             if (string.IsNullOrWhiteSpace(filter.NameMask) && string.IsNullOrWhiteSpace(filter.Regex))
             {
                 throw new InvalidOperationException(
-                    $"Invalid search patterns Both {nameof(filter.Regex)} and {nameof(filter.NameMask)} are null or empty.");
+                    $"Invalid search patterns. Both {nameof(filter.Regex)} and {nameof(filter.NameMask)} are null or empty.");
             }
         }
 
-        private string[] GetFiles(bool shouldSearchSub, FileSystemFilter filter, string searchPattern)
+        private IEnumerable<FileInfo> GetFiles(bool shouldSearchSub, FileSystemFilter filter, string searchPattern)
         {
             string[] files = shouldSearchSub
                 ? Directory.GetFiles(filter.Path, searchPattern, SearchOption.AllDirectories)
                 : Directory.GetFiles(filter.Path, searchPattern, SearchOption.TopDirectoryOnly);
 
-            IEnumerable<string> output = files
+            return files
                 .Select(f => new FileInfo(f))
                 .Where(f => filter.Attributes.Any(a => f.Attributes.HasFlag(a)))
                 .ConditionalWhere(
                     f => filter.Regex != null,
                     () => CreateRegex(filter),
-                    (file, regex) => regex.IsMatch(file.FullName))
-                .Select(f => f.FullName);
-
-            return output.ToArray();
+                    (file, regex) => regex.IsMatch(file.FullName));
         }
 
-        private string[] GetDirectories(bool shouldSearchSub, FileSystemFilter filter, string searchPattern)
+        private IEnumerable<DirectoryInfo> GetDirectories(bool shouldSearchSub, FileSystemFilter filter, string searchPattern)
         {
             string[] directories = shouldSearchSub
                 ? Directory.GetDirectories(filter.Path, searchPattern, SearchOption.AllDirectories)
                 : Directory.GetDirectories(filter.Path, searchPattern, SearchOption.TopDirectoryOnly);
 
-            IEnumerable<string> output = directories
+            return directories
                 .Select(d => new DirectoryInfo(d))
                 .Where(d => filter.Attributes.Any(a => d.Attributes.HasFlag(a)))
                 .ConditionalWhere(x => filter.Regex != null,
                     () => CreateRegex(filter),
-                    (directory, regex) => regex.IsMatch(directory.FullName))
-                .Select(d => d.FullName);
-
-            return output.ToArray();
+                    (directory, regex) => regex.IsMatch(directory.FullName));
         }
 
         private void PrepareFilter(FileSystemFilter filter)

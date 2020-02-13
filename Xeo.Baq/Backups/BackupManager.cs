@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Autofac;
 using NLog;
+using Xeo.Baq.Backups.Factories;
 using Xeo.Baq.Backups.Performers;
+using Xeo.Baq.Backups.Types;
 using Xeo.Baq.Configuration;
 using Xeo.Baq.Diagnostics;
+using Xeo.Baq.Extensions;
 
 namespace Xeo.Baq.Backups
 {
@@ -16,23 +20,21 @@ namespace Xeo.Baq.Backups
 
     public class BackupManager : IBackupManager
     {
+        private readonly IBackupPerformerFactory _backupPerformerFactory;
         private readonly IEnumerable<BackupSettings> _backupSettingsList;
-        private readonly Func<BackupSettings, FullBackupPerformer> _fullBackupPerformerFactory;
         private readonly ILogger _logger;
+        private readonly ILifetimeScope _parentScope;
 
-        public BackupManager(IEnumerable<BackupSettings> backupSettingsList,
-            IBackupOperationResultProvider backupOperationResultProvider,
-            Func<BackupSettings, FullBackupPerformer> fullBackupPerformerFactory,
-            ILogger logger)
+        public BackupManager(IBackupSettingsProvider backupSettingsProvider,
+            ILogger logger,
+            IBackupPerformerFactory backupPerformerFactory,
+            ILifetimeScope parentScope)
         {
-            _backupSettingsList = backupSettingsList;
-            _fullBackupPerformerFactory = fullBackupPerformerFactory;
+            _backupSettingsList = backupSettingsProvider.Load();
             _logger = logger;
-
-            OperationResultProvider = backupOperationResultProvider;
+            _backupPerformerFactory = backupPerformerFactory;
+            _parentScope = parentScope;
         }
-
-        public IBackupOperationResultProvider OperationResultProvider { get; }
 
         public void RunAllBackups()
         {
@@ -55,35 +57,41 @@ namespace Xeo.Baq.Backups
 
         private void RunInternal(BackupSettings settings)
         {
-            Func<BackupSettings, IBackupPerformer> factory = GetBackupPerformerFactory(settings.BackupType);
+            var type = settings.BackupType.Instantiate<IBackupType>();
+            Func<BackupSettings, IBackupPerformer> factory = _backupPerformerFactory.GetFactoryByBackupType(type);
             IBackupPerformer performer = factory(settings);
-            TimeSpan backupDuration = default;
+            TimeSpan duration = default;
+            BackupOperationResult result;
 
             _logger.Info($"Started performing backup with Id = \"{settings.Id}\".");
 
-            try
+            using (ILifetimeScope scope = _parentScope.BeginLifetimeScope())
             {
-                Measured.Go(() => performer.Perform(), out backupDuration);
-            }
-            catch (Exception e)
-            {
-                _logger.Info($"Error occurred while performing backup with Id = \"{settings.Id}\".");
-                throw;
-            }
-            finally
-            {
-                _logger.Info($"Finished performing backup with Id = \"{settings.Id}\". Duration: {backupDuration}");
-            }
-        }
+                IBackupOperationResultBuilder resultBuilder = scope.Resolve<IBackupOperationResultBuilder>()
+                    .SetStartTime(DateTime.Now);
 
-        private Func<BackupSettings, IBackupPerformer> GetBackupPerformerFactory(Type backupType)
-        {
-            if (backupType == typeof(FullBackupPerformer))
-            {
-                return _fullBackupPerformerFactory;
-            }
+                try
 
-            throw new InvalidOperationException($"Cannot provide backup performer factory for backup type \"{backupType.FullName}\".");
+                {
+                    Measured.Run(() =>
+                            performer.Perform(),
+                        out duration);
+                }
+                catch (Exception ex)
+                {
+                    _logger.Error(ex, $"Fatal error occurred while performing backup with Id = \"{settings.Id}\".");
+
+                    throw;
+                }
+                finally
+                {
+                    result = resultBuilder.SetEndTime(DateTime.Now)
+                        .SetDuration(duration)
+                        .Build();
+
+                    _logger.Info($"Finished performing backup with Id = \"{settings.Id}\". Duration: {result.Duration:g} (ms: {result.Duration.TotalMilliseconds}), start time: {result.TimeStarted}, end time: {result.TimeEnded}, errors: {result.Exceptions.Count()}");
+                }
+            }
         }
     }
 }

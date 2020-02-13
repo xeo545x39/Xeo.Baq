@@ -9,5 +9,10 @@ namespace Xeo.Baq.IO
             //WinApi.Kernel32.Kernel32Methods.CreateFile();
             throw new NotImplementedException();
         }
+
+        public void Copy(byte[] fileContent, string destination)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

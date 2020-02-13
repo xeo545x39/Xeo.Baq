@@ -18,10 +18,11 @@
         }
 
         public BackupEntryKey Key { get; }
+        public string Path => Key.Path;
         public FileSystemEntryType EntryType { get; set; }
         public object SyncObject { get; }
 
         public override string ToString()
-            => Key.Path;
+            => Path;
     }
 }

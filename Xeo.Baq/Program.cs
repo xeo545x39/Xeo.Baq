@@ -9,7 +9,7 @@ namespace Xeo.Baq
     {
         public static void Main(string[] args)
         {
-            using (IContainer scope = Container.Instance)
+            using (ILifetimeScope scope = Container.Instance.BeginLifetimeScope())
             {
                 var backupManger = scope.Resolve<IBackupManager>();
 
