@@ -11,6 +11,7 @@ using Xeo.Baq.Diagnostics.Computing;
 using Xeo.Baq.Exceptions;
 using Xeo.Baq.Filtering;
 using Xeo.Baq.IO;
+using Xeo.Baq.IO.Abstract;
 
 namespace Xeo.Baq.Configuration.DependencyInjection
 {

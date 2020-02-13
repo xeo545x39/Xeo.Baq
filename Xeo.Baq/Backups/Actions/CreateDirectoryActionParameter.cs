@@ -1,4 +1,4 @@
-﻿using Xeo.Baq.IO;
+﻿using Xeo.Baq.IO.Abstract;
 
 namespace Xeo.Baq.Backups.Actions
 {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Xeo.Baq.IO.Abstract;
 
 namespace Xeo.Baq.IO
 {

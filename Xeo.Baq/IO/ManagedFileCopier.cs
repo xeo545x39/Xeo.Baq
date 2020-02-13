@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using NLog;
+using Xeo.Baq.IO.Abstract;
 
 namespace Xeo.Baq.IO
 {

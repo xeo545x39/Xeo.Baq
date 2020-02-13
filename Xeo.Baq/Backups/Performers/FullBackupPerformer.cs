@@ -5,6 +5,7 @@ using Autofac;
 using Xeo.Baq.Configuration;
 using Xeo.Baq.Extensions;
 using Xeo.Baq.Filtering;
+using Xeo.Baq.IO;
 
 namespace Xeo.Baq.Backups.Performers
 {

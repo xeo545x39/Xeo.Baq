@@ -1,4 +1,5 @@
 ﻿using System;
+using Xeo.Baq.IO.Abstract;
 
 namespace Xeo.Baq.IO
 {

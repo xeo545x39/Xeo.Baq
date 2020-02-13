@@ -2,14 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Xeo.Baq.Backups;
 using Xeo.Baq.Backups.Actions;
 using Xeo.Baq.Configuration;
 using Xeo.Baq.Exceptions;
 using Xeo.Baq.Extensions;
 using Xeo.Baq.Filtering;
-using Xeo.Baq.IO;
+using Xeo.Baq.IO.Abstract;
 
-namespace Xeo.Baq.Backups
+namespace Xeo.Baq.IO
 {
     public interface IFileSystemActionExecutor
     {

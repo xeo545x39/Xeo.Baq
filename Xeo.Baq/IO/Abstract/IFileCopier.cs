@@ -1,4 +1,4 @@
-﻿namespace Xeo.Baq.IO
+﻿namespace Xeo.Baq.IO.Abstract
 {
     public interface IFileCopier
     {
